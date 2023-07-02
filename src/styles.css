@@ -1,0 +1,93 @@
+body {
+  background-color: #50c878;
+}
+
+.breed-select {
+  display: block;
+  width: 300px;
+  height: 50px;
+  line-height: 30px;
+  position: relative;
+  color: #2f4f4f;
+  font-size: 26px;
+  background-color: transparent;
+  border: outset #2f4f4f;
+  border-radius: 10px;
+  overflow-y: auto;
+  font-family: inherit;
+}
+.breed-select option {
+  background-color: #ffd700;
+}
+
+.breed-select::-webkit-scrollbar {
+  width: 10px;
+}
+
+.breed-select::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.breed-select::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.cat-info {
+  width: 1050px;
+  margin: 30px auto;
+  display: flex;
+  background-color: #e6e6fa;
+  border-radius: 30px;
+}
+
+.breed-image {
+  padding: 15px;
+  width: 500px;
+  border-radius: 30px;
+}
+.breed-container {
+  width: 400px;
+  padding: 20px;
+}
+.breed-name {
+  font-size: 46px;
+  color: #1d201f;
+}
+.breed-temperament {
+  color: #df928e;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.breed-description {
+  font-size: 18px;
+  color: #404040;
+  line-height: 1.5;
+}
+
+.loader {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #fff;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: -38px -12px, -14px 0, 14px 0, 38px 0;
+  }
+  33% {
+    box-shadow: -38px 0px, -14px -12px, 14px 0, 38px 0;
+  }
+  66% {
+    box-shadow: -38px 0px, -14px 0, 14px -12px, 38px 0;
+  }
+  100% {
+    box-shadow: -38px 0, -14px 0, 14px 0, 38px -12px;
+  }
+}
